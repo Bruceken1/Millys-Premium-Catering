@@ -1,108 +1,104 @@
-import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { Facebook, Instagram, Phone } from "lucide-react"; // Added Phone icon
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-secondary border-t border-primary/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
+    <footer className="bg-black text-white py-12 mt-auto">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Brand / About Section */}
           <div>
-            <h3 className="font-serif text-2xl font-bold gold-text mb-4">
-              Milly's
-            </h3>
-            <p className="text-sm text-muted-foreground italic mb-4">
-              "A Bite Above The Rest"
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Premium outside catering and events management serving Busia &
-              Western Kenya since 2011.
+            <h3 className="text-2xl font-bold text-[#D4AF77] mb-4">Milly's Premium Catering</h3>
+            <p className="text-gray-400 mb-4">
+              A Bite Above The Rest – Professional outside catering in Busia & Western Kenya since 2011.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg text-primary mb-4">Quick Links</h4>
-            <div className="space-y-2">
-              {[
-                { to: "/about", label: "About Us" },
-                { to: "/services", label: "Our Services" },
-                { to: "/menu", label: "Menu" },
-                { to: "/gallery", label: "Gallery" },
-                { to: "/quote", label: "Request a Quote" },
-              ].map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="block text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/" className="text-gray-400 hover:text-[#D4AF77] transition">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-gray-400 hover:text-[#D4AF77] transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="text-gray-400 hover:text-[#D4AF77] transition">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="/menu" className="text-gray-400 hover:text-[#D4AF77] transition">
+                  Menu
+                </a>
+              </li>
+              <li>
+                <a href="/gallery" className="text-gray-400 hover:text-[#D4AF77] transition">
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-gray-400 hover:text-[#D4AF77] transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Social */}
           <div>
-            <h4 className="font-serif text-lg text-primary mb-4">Contact Us</h4>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3 text-sm text-muted-foreground">
-                <MapPin size={16} className="text-primary mt-0.5 shrink-0" />
-                <span>Busia, Western Kenya</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Phone size={16} className="text-primary shrink-0" />
-                <a href="tel:+254700000000" className="hover:text-primary transition-colors">
-                  +254 700 000 000
-                </a>
-              </div>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Mail size={16} className="text-primary shrink-0" />
-                <a href="mailto:info@millysoutsidecatering.co.ke" className="hover:text-primary transition-colors">
-                  info@millysoutsidecatering.co.ke
-                </a>
-              </div>
-            </div>
-          </div>
+            <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+            <p className="text-gray-400 mb-4">
+              Busia, Western Kenya<br />
+              Phone: +254-722-529-621<br />
+              Email: director@millysoutsidecatering.co.ke
+            </p>
 
-          {/* Social */}
-          <div>
-            <h4 className="font-serif text-lg text-primary mb-4">Follow Us</h4>
-            <div className="flex gap-4">
+            {/* Social Icons – Facebook & Instagram */}
+            <div className="flex space-x-6 mt-4">
               <a
-                href="https://instagram.com"
+                href="https://web.facebook.com/MillysOutsideCateringAndEventManagementServices"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                className="text-gray-400 hover:text-[#D4AF77] transition"
+                aria-label="Facebook"
               >
-                <Instagram size={18} />
+                <Facebook className="h-8 w-8" />
               </a>
+
               <a
-                href="https://facebook.com"
+                href="https://www.instagram.com/mill.yokina/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                className="text-gray-400 hover:text-[#D4AF77] transition"
+                aria-label="Instagram"
               >
-                <Facebook size={18} />
-              </a>
-              <a
-                href="https://wa.me/254700000000?text=Hello%20Milly's%20Catering!"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all"
-              >
-                <Phone size={18} />
+                <Instagram className="h-8 w-8" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-primary/10 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Milly's Outside Catering. All rights reserved.
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+          © {new Date().getFullYear()} Milly's Premium Catering. All rights reserved.
         </div>
       </div>
+
+      {/* Floating WhatsApp/Phone Button – restored as circular button */}
+      <a
+        href="https://wa.me/254722529621?text=Hello%20Milly's%20Catering!"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:bg-green-600 transition-all z-50"
+        aria-label="Chat on WhatsApp"
+      >
+        <Phone className="h-7 w-7" /> {/* Using Phone icon; you can change to MessageCircle if preferred */}
+      </a>
     </footer>
   );
-};
-
-export default Footer;
+}
