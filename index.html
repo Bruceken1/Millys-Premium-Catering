@@ -4,41 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Site title - update this to match your brand -->
-  <title>Milly's Premium Catering | Outside Catering in Busia & Western Kenya</title>
+  <!-- Optimized Title (52 characters) -->
+  <title>Milly's Premium Catering | Busia & Western Kenya</title>
 
-  <!-- Description for SEO and social sharing -->
-  <meta name="description" content="Milly's Premium Catering - Professional outside catering services for weddings, corporate events, parties, festivals, and more in Busia and Western Kenya. A Bite Above The Rest." />
+  <!-- Optimized Meta Description (148 characters) -->
+  <meta name="description" content="Professional outside catering in Busia & Western Kenya. Weddings, corporate events, parties, festivals & more. A Bite Above The Rest since 2011." />
 
-  <!-- Author / credits (optional, remove Lovable reference) -->
-  <meta name="author" content="Bruceken1" />
+  <!-- Author & Keywords -->
+  <meta name="author" content="Milly's Premium Catering" />
+  <meta name="keywords" content="catering Busia, outside catering Western Kenya, wedding catering Busia, events management Kenya, Milly's Premium Catering, party catering Busia" />
 
-  <!-- Open Graph / Facebook sharing -->
-  <meta property="og:title" content="Milly's Premium Catering" />
-  <meta property="og:description" content="Premium outside catering, events management, tents, decoration, and more. Serving Busia, Western Kenya, and beyond." />
+  <!-- Canonical Tag (prevents duplicate content issues) -->
+  <link rel="canonical" href="https://millysoutsidecatering.co.ke" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Milly's Premium Catering | Busia & Western Kenya" />
+  <meta property="og:description" content="Professional outside catering in Busia & Western Kenya. Weddings, corporate events, parties & more." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://your-railway-domain.up.railway.app" /> <!-- Replace with your actual live URL -->
-  <meta property="og:image" content="/og-image.jpg" /> <!-- Add an og-image.jpg to /public/ later for better sharing -->
+  <meta property="og:url" content="https://millysoutsidecatering.co.ke" />
+  <meta property="og:image" content="/og-image.jpg" /> <!-- Add a 1200x630 image later in /public/ -->
 
-  <!-- Twitter / X cards -->
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Milly's Premium Catering" />
-  <meta name="twitter:description" content="A Bite Above The Rest – Professional catering services in Western Kenya." />
-  <meta name="twitter:image" content="/og-image.jpg" /> <!-- Same as above -->
+  <meta name="twitter:title" content="Milly's Premium Catering | Busia & Western Kenya" />
+  <meta name="twitter:description" content="A Bite Above The Rest – Premium catering in Western Kenya." />
 
-  <!-- Favicons (using your uploaded files) -->
+  <!-- Favicons (your files) -->
   <link rel="icon" type="image/x-icon" href="/favicon-32x32.ico" sizes="32x32" />
   <link rel="icon" type="image/x-icon" href="/favicon-64x64.ico" sizes="64x64" />
-  <!-- If you have a larger one for Apple devices (optional but recommended) -->
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /> -->
 
-  <!-- Preload key assets if needed (optional for perf) -->
-  <!-- <link rel="preload" href="/your-hero-image.jpg" as="image" /> -->
-
-  <!-- Vite/React injected stuff (keep these if present) -->
-  <!-- %VITE_HEAD% or similar placeholders usually go here, but Vite handles them -->
+  <!-- Schema.org JSON-LD (fixes missing schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Milly's Premium Catering",
+    "description": "Professional outside catering services in Busia and Western Kenya since 2011",
+    "url": "https://millysoutsidecatering.co.ke",
+    "telephone": "+254-XXX-XXX-XXX", 
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Busia",
+      "addressRegion": "Western Kenya",
+      "addressCountry": "KE"
+    },
+    "image": "https://millysoutsidecatering.co.ke/og-image.jpg",
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 07:00-20:00"
+  }
+  </script>
 </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
