@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+@layer base {
+  #lovable-badge,
+  [data-lovable-badge],
+  div[class*="lovable-edit"],
+  button[aria-label*="Edit with Lovable"],
+  a[href*="lovable.dev"] {
+    display: none !important;
+  }
+}
