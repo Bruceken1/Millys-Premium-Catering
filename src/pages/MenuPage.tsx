@@ -4,39 +4,39 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 interface MenuItem {
   name: string;
   desc: string;
-  price: string;
+  
 }
 
 const menuData: Record<string, MenuItem[]> = {
   Starters: [
-    { name: "Samosa Platter", desc: "Crispy minced beef or vegetable samosas with tamarind chutney", price: "KSh 350" },
-    { name: "Coconut Soup", desc: "Creamy coconut soup infused with lemongrass and coriander", price: "KSh 400" },
-    { name: "Grilled Prawns", desc: "Jumbo prawns marinated in garlic butter and herbs", price: "KSh 650" },
-    { name: "Garden Fresh Salad", desc: "Mixed greens with avocado, cherry tomatoes, and honey-lime dressing", price: "KSh 300" },
+    { name: "Samosa Platter", desc: "Crispy minced beef or vegetable samosas with tamarind chutney", },
+    { name: "Coconut Soup", desc: "Creamy coconut soup infused with lemongrass and coriander",  },
+    { name: "Grilled Prawns", desc: "Jumbo prawns marinated in garlic butter and herbs", },
+    { name: "Garden Fresh Salad", desc: "Mixed greens with avocado, cherry tomatoes, and honey-lime dressing",  },
   ],
   Mains: [
-    { name: "Nyama Choma", desc: "Premium slow-roasted goat meat served with kachumbari and ugali", price: "KSh 1,200" },
-    { name: "Pilau Rice & Chicken", desc: "Fragrant spiced pilau rice with tender braised chicken", price: "KSh 800" },
-    { name: "Grilled Tilapia", desc: "Whole Lake Victoria tilapia grilled with lemon and herbs", price: "KSh 950" },
-    { name: "Beef Stew", desc: "Slow-cooked beef in rich tomato and herb sauce", price: "KSh 750" },
-    { name: "Lamb Chops", desc: "Pan-seared lamb chops with rosemary jus and roasted vegetables", price: "KSh 1,500" },
+    { name: "Nyama Choma", desc: "Premium slow-roasted goat meat served with kachumbari and ugali",  },
+    { name: "Pilau Rice & Chicken", desc: "Fragrant spiced pilau rice with tender braised chicken",  },
+    { name: "Grilled Tilapia", desc: "Whole Lake Victoria tilapia grilled with lemon and herbs",  },
+    { name: "Beef Stew", desc: "Slow-cooked beef in rich tomato and herb sauce",  },
+    { name: "Lamb Chops", desc: "Pan-seared lamb chops with rosemary jus and roasted vegetables",  },
   ],
   Sides: [
-    { name: "Ugali", desc: "Traditional Kenyan cornmeal staple, perfectly prepared", price: "KSh 150" },
-    { name: "Chapati", desc: "Soft, flaky layered flatbread", price: "KSh 100" },
-    { name: "Sukuma Wiki", desc: "Sautéed collard greens with tomatoes and onions", price: "KSh 200" },
-    { name: "Mukimo", desc: "Mashed potatoes with corn, peas, and pumpkin leaves", price: "KSh 250" },
+    { name: "Ugali", desc: "Traditional Kenyan cornmeal staple, perfectly prepared", },
+    { name: "Chapati", desc: "Soft, flaky layered flatbread", },
+    { name: "Sukuma Wiki", desc: "Sautéed collard greens with tomatoes and onions",  },
+    { name: "Mukimo", desc: "Mashed potatoes with corn, peas, and pumpkin leaves",  },
   ],
   Desserts: [
-    { name: "Mandazi Bites", desc: "Kenyan doughnuts dusted with cardamom sugar", price: "KSh 250" },
-    { name: "Tropical Fruit Platter", desc: "Seasonal fresh fruits — mango, pineapple, passion fruit", price: "KSh 400" },
-    { name: "Chocolate Lava Cake", desc: "Rich molten chocolate cake with vanilla ice cream", price: "KSh 550" },
+    { name: "Mandazi Bites", desc: "Kenyan doughnuts dusted with cardamom sugar",  },
+    { name: "Tropical Fruit Platter", desc: "Seasonal fresh fruits — mango, pineapple, passion fruit",  },
+    { name: "Chocolate Lava Cake", desc: "Rich molten chocolate cake with vanilla ice cream",  },
   ],
   Beverages: [
-    { name: "Fresh Passion Juice", desc: "Freshly squeezed passion fruit juice", price: "KSh 200" },
-    { name: "Kenyan Chai", desc: "Spiced milk tea brewed the traditional way", price: "KSh 100" },
-    { name: "Mango Smoothie", desc: "Blended fresh mango with yogurt and honey", price: "KSh 300" },
-    { name: "Hibiscus Cooler", desc: "Chilled roselle tea with ginger and lemon", price: "KSh 250" },
+    { name: "Fresh Passion Juice", desc: "Freshly squeezed passion fruit juice",  },
+    { name: "Kenyan Chai", desc: "Spiced milk tea brewed the traditional way",  },
+    { name: "Mango Smoothie", desc: "Blended fresh mango with yogurt and honey",  },
+    { name: "Hibiscus Cooler", desc: "Chilled roselle tea with ginger and lemon",  },
   ],
 };
 
